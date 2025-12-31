@@ -30,6 +30,7 @@
 
 ### 🌐 Live Demo
 Besuchen Sie die Seite hier: [https://sonnerstudio.github.io/KI-Netiquette](https://sonnerstudio.github.io/KI-Netiquette)
+→ **[Direkt zur deutschen Version](https://sonnerstudio.github.io/KI-Netiquette?lang=de)**
 
 ---
 
@@ -59,6 +60,7 @@ Besuchen Sie die Seite hier: [https://sonnerstudio.github.io/KI-Netiquette](http
 
 ### 🌐 Live Demo
 Visit the site here: [https://sonnerstudio.github.io/KI-Netiquette](https://sonnerstudio.github.io/KI-Netiquette)
+→ **[Direct link to English version](https://sonnerstudio.github.io/KI-Netiquette?lang=en)**
 
 ---
 
@@ -88,3 +90,4 @@ Visit the site here: [https://sonnerstudio.github.io/KI-Netiquette](https://sonn
 
 ### 🌐 Live Demo
 Visitez le site ici : [https://sonnerstudio.github.io/KI-Netiquette](https://sonnerstudio.github.io/KI-Netiquette)
+→ **[Lien direct vers la version française](https://sonnerstudio.github.io/KI-Netiquette?lang=fr)**

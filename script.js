@@ -242,6 +242,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Init Language
-    const savedLang = localStorage.getItem('selectedLang') || 'de';
-    setLanguage(savedLang);
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    const savedLang = localStorage.getItem('selectedLang');
+
+    // Priority: URL Param > LocalStorage > Default (de)
+    const initialLang = (langParam && translations[langParam]) ? langParam : (savedLang || 'de');
+
+    setLanguage(initialLang);
 });
