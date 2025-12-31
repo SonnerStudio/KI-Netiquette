@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailansicht | KI-Netiquette</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-hero {
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+        }
+
+        .detail-content {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 3rem;
+            backdrop-filter: blur(12px);
+            margin-bottom: 4rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: var(--primary);
+        }
+
+        .detail-content h3 {
+            margin-top: 2rem;
+            color: var(--secondary);
+        }
+
+        .detail-content ul {
+            list-style-position: inside;
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .detail-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i data-lucide="sparkles"></i>
+                    KI-Netiquette
+                </a>
+                <div class="nav-links">
+                    <a href="index.html#grundwerte" data-i18n="nav_values">Grundwerte</a>
+                    <a href="index.html#kommunikation" data-i18n="nav_communication">Kommunikation</a>
+                    <a href="index.html#praxis" data-i18n="nav_dos_donts">Dos & Don'ts</a>
+
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" onclick="setLanguage('de')">DE</button>
+                        <span class="divider">|</span>
+                        <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                        <span class="divider">|</span>
+                        <button class="lang-btn" onclick="setLanguage('fr')">FR</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container detail-hero">
+            <a href="index.html" class="back-btn">
+                <i data-lucide="arrow-left"></i>
+                <span data-i18n="btn_back">Zurück zur Übersicht</span>
+            </a>
+
+            <h1 id="detail-title">Loading...</h1>
+        </div>
+
+        <article class="container">
+            <div id="detail-body" class="detail-content">
+                <!-- Content will be injected here -->
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" data-i18n="footer_imprint">Impressum</a>
+                <a href="#" data-i18n="footer_privacy">Datenschutz</a>
+                <a href="#" data-i18n="footer_contact">Kontakt</a>
+            </div>
+            <p data-i18n="footer_copy">&copy; 2025 KI-Netiquette Initative. Open Source on GitHub.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

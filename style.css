@@ -336,6 +336,20 @@ footer {
     color: var(--primary);
 }
 
+/* Card Links */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.card-link .glass-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
