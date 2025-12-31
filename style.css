@@ -12,7 +12,7 @@
     --glass-bg: rgba(30, 41, 59, 0.4);
     --glass-border: rgba(255, 255, 255, 0.1);
     --card-hover: rgba(51, 65, 85, 0.6);
-    
+
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
@@ -29,7 +29,7 @@ body {
     color: var(--text-main);
     font-family: var(--font-body);
     line-height: 1.6;
-    background-image: 
+    background-image:
         radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 40%);
     background-attachment: fixed;
@@ -37,7 +37,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--font-heading);
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -130,6 +133,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -142,6 +146,40 @@ nav {
 .nav-links a:hover {
     color: var(--primary);
 }
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--glass-border);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 0.2rem;
+}
+
+.lang-btn:hover {
+    color: #fff;
+}
+
+.lang-btn.active {
+    color: var(--primary);
+}
+
+.divider {
+    color: var(--glass-border);
+    font-size: 0.8rem;
+}
+
 
 /* Hero Section */
 .hero {
@@ -255,7 +293,7 @@ nav {
 .list-item {
     margin-bottom: 1rem;
     padding: 1rem;
-    background: rgba(255,255,255,0.03);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
     display: flex;
     align-items: flex-start;
@@ -303,12 +341,13 @@ footer {
     h1 {
         font-size: 2.5rem;
     }
-    
+
     .comparison-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .nav-links {
-        display: none; /* Simple hiding for now, could add burger menu if needed */
+        display: none;
+        /* Simple hiding for now, could add burger menu if needed */
     }
 }
